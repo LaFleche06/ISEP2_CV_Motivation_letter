@@ -1,0 +1,91 @@
+---
+name: Jeanne De La Flèche
+surname: ONANENA AMANA
+position: "Elève Ingénieur Statisticienne Economiste"
+address: "HLM Cité port"
+phone: +221 78 462 83 38
+profilepic: CV.jpg
+email: "jeanneamana53@gmail.com"
+github: LaFleche06
+linkedin: Jeanne Amana
+date: "`r format(Sys.time(), '%B %Y')`"
+aboutme: "Je suis une jeune femme travailleuse et assez rigoureuse qui aimerais accomplir de grandes choses dans les domaines de l'économie et la finance. Pour ce faire, je nourris ma curiosité chaque jour en consultant les travaux des grands économistes et financiers du moment pour chercher des limites et voir comment orienter mes recherches vers ces liimites."
+Referees:  "M. Idrissa DIAGNE
+Directeur de l’ENSAE de Dakar.
+diagne.idrissa@gmail.com
+Professeur adjoint
+Département de mathématiques UQAM
+Enseignant permanent à l’ENSAE de Dakar
+fof_sn@yahoo.fr"
+output: vitae::twentyseconds
+---
+
+```{r setup,include=FALSE}
+library(dplyr)
+library(tibble)
+library(vitae)
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+```
+
+# Some stuff about me
+
+-   Rigoureuse
+
+-   Efficace
+
+-   Travailleuse
+
+-   Sociable 
+
+# Education
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "Cycle secondaire", "2016-2018", "Lycée d'Enseignement Général", "Ombessa",
+  "Cycle supérieur", "2018-2022", "Université de Yaoundé 1", "Yaoundé",
+  "ISEP1", "2022-2023", "ENSAE", "Dakar",
+  "ISEP2", "2023-2024", "ENSAE", "Dakar"
+) %>% 
+  detailed_entries(Degree, Year, Institution, Where)
+
+```
+
+# Compétences
+
+-   Python
+-   VBA
+-   QGIS
+-   Epuration des bases de données sur Excel
+-   Visualisation de données (ggplot2, matplotlib)
+-   Traitement de données (dplyr, pandas)
+
+# Projets
+
+-   Plannification d'une enquête
+-  Création d'une application de gestion de stock
+-  Traitement des données avec STATA, SPSS, PYTHON, R
+
+# Langues
+
+-   GUNU (langue maternelle)
+-   Français (courant)
+-   Anglais (courant)
+
+# Centres d'intérêt
+
+-   Cuisine
+-   Sport
+-   coiffure
+-   Lecture
+
+# Activités associatives
+
+- 2022-2023 : Sécrétaire chargé des Affaires Sociales de l’Amicale des
+Elèves et Stagiaires de l’ENSAE (AES-ENSAE)
+- 2022-2023 : Trésorière au sein du club Leadership à ENSAE de Dakar
+- 2023-2024 : Trésorière de l’Amicale des Elèves et Stagiaires de ENSAE
+de Dakar (AES-ENSAE)
+- 2023-2024 : Chargée à la communication pour le club informatique
+
